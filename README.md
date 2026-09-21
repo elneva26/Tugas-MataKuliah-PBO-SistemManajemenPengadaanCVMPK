@@ -20,3 +20,21 @@ Program terdiri dari satu class entry point, yaitu SistemmanajemenCVMPK, serta e
 
 
 Dengan demikian, program ini diharapkan dapat menjadi solusi sederhana untuk membantu pengelolaan data barang, pemasok, dan pengadaan pada CV Mandiri Prima Kreatif secara lebih sistematis.
+
+
+Penjelasan hierarki class:
+Barang menjadi kelas induk yang menyimpan karakteristik umum seluruh barang. BarangElektronik dan BarangNonElektronik menjadi kelas turunan yang mewarisi karakteristik tersebut dan menambahkan karakteristik khusus masing-masing. Selain inheritance, kedua subclass juga menerapkan polymorphism melalui overriding method tampilkanInfo().
+
+1. Kelas Barang sebagai superclass
+Kelas Barang merupakan superclass (kelas induk) yang menjadi dasar bagi jenis-jenis barang dalam sistem. Kelas ini memiliki atribut umum yang dimiliki oleh semua barang, yaitu idBarang, nama, dan stok.
+Kelas Barang juga menyediakan method seperti getIdBarang(), getNama(), getStok(), setStok(), dan tampilkanInfo(). Karena atribut umum diletakkan di superclass, subclass tidak perlu mendefinisikan ulang atribut tersebut.
+
+2. Kelas BarangElektronik sebagai subclass
+BarangElektronik merupakan subclass dari Barang. Kelas ini mewarisi atribut dan method yang terdapat pada Barang, kemudian memiliki atribut tambahan yaitu garansi.
+Kelas ini juga melakukan method overriding pada tampilkanInfo(), sehingga informasi yang ditampilkan dapat disesuaikan dengan karakteristik barang elektronik, termasuk informasi garansi.
+
+3. Kelas BarangNonElektronik sebagai subclass
+BarangNonElektronik juga merupakan subclass dari Barang. Kelas ini mewarisi atribut dan method dari Barang, tetapi memiliki atribut tambahan berupa kategori.
+Sama seperti BarangElektronik, kelas ini melakukan overriding terhadap method tampilkanInfo() untuk menampilkan informasi khusus barang non-elektronik.
+
+
