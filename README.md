@@ -22,7 +22,8 @@ Program terdiri dari satu class entry point, yaitu SistemmanajemenCVMPK, serta e
 Dengan demikian, program ini diharapkan dapat menjadi solusi sederhana untuk membantu pengelolaan data barang, pemasok, dan pengadaan pada CV Mandiri Prima Kreatif secara lebih sistematis.
 
 
-Penjelasan hierarki class:
+### Penjelasan hierarki class:
+
 Barang menjadi kelas induk yang menyimpan karakteristik umum seluruh barang. BarangElektronik dan BarangNonElektronik menjadi kelas turunan yang mewarisi karakteristik tersebut dan menambahkan karakteristik khusus masing-masing. Selain inheritance, kedua subclass juga menerapkan polymorphism melalui overriding method tampilkanInfo().
 
 1. Kelas Barang sebagai superclass
