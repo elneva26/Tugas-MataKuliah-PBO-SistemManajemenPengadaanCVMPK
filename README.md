@@ -1,6 +1,7 @@
 
 # Sistem manajemen pengedaan CV Mandiri Prima Kreatif
 ## Nama : Elena Dementieva
+## NIM : 2509116008
 ## Kelas : Sistem Informasi A'25
 ## Matkul : Pemrograman Berorientasi Objek (PBO)
 
