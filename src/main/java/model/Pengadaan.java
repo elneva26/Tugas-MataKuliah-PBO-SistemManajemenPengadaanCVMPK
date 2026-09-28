@@ -9,14 +9,15 @@ package model;
  * @author ASUS FC
  */
 public class Pengadaan {
+
     private int idPengadaan;
     private String tanggal;
     private String alamat;
 
     public Pengadaan(int idPengadaan, String tanggal, String alamat) {
-        this.idPengadaan = idPengadaan;
-        this.tanggal = tanggal; 
-        this.alamat = alamat;
+        setIdPengadaan(idPengadaan);
+        setTanggal(tanggal);
+        setAlamat(alamat);
     }
 
     public int getIdPengadaan() {
@@ -24,7 +25,7 @@ public class Pengadaan {
     }
 
     public void setIdPengadaan(int idPengadaan) {
-        if (idPengadaan <=0){
+        if (idPengadaan <= 0) {
             System.out.println("==================================================================");
             System.out.println("ID pengadaan tidak valid.                                         ");
             System.out.println("==================================================================");

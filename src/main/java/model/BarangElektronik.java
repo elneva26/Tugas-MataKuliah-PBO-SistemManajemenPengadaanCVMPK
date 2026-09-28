@@ -9,7 +9,7 @@ package model;
  * @author ASUS FC
  */
 public class BarangElektronik extends Barang {
-    
+
     private String garansi;
 
     public BarangElektronik(int idBarang, String nama, int stok, String garansi) {
@@ -36,11 +36,10 @@ public class BarangElektronik extends Barang {
         System.out.println("==================================================================");
         System.out.println("                           BARANG ELEKTRONIK                      ");
         System.out.println("==================================================================");
-        System.out.println("ID Barang:"+ getIdBarang()                                         );
-        System.out.println("Nama:"+ getNama()                                                  );
-        System.out.println("Stok:"+ getStok()                                                  );
-        System.out.println("Garansi:"+ garansi                                                 );
+        System.out.println("ID Barang:" + getIdBarang());
+        System.out.println("Nama:" + getNama());
+        System.out.println("Stok:" + getStok());
+        System.out.println("Garansi:" + garansi);
         System.out.println("==================================================================");
     }
 }
-
